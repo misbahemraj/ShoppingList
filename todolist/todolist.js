@@ -4,14 +4,6 @@ var input = document.getElementById("userinput");
 //var for crossing out items
 var ul = document.querySelector("ul");
 
-//var for deleting list item
-var del= document.getElementsByClassName("delete");
-
-for( var i=0;i<del.length;i++){
-	del[i].addEventListener("click", deleteListElement);
-}
-
-
 function inputLength() {
 	return input.value.length;
 }
@@ -35,14 +27,12 @@ function addListAfterKeypress(event) {
 	}
 }
 
-
 //crosses out list item
 function checkOff(e) {
 	if (e.target.tagName == 'LI') {
 		e.target.classList.toggle('done');
 
 	}
-
 }
 	
 //from StackOverFlow	
@@ -56,10 +46,6 @@ function deleteListElement(){
   for( var i=0;i<del.length;i++){
 	  del[i].addEventListener("click", deleteListElement);
   }
-
-
-
-
 
 
 ul.addEventListener("click", checkOff);
