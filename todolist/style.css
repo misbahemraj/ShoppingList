@@ -1,0 +1,11 @@
+.done {
+  text-decoration: line-through;
+}
+
+#listButton li {
+  display: flex;
+  justify-content: left;
+  list-style-type: none;
+
+}
+
